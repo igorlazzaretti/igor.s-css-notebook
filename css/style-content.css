@@ -123,13 +123,12 @@ main div{
     width: 100px;
 }
 
-
 footer {
-    min-height: 40vh;
     border-top: solid 1px #cdcdcd;
     text-align: center;
     display: inline;
 }
+
 footer img{
     width: 53px;
         
@@ -140,9 +139,11 @@ aside {
     max-width: fit-content;
     border-right: solid 1px #cdcdcd;
   }
+
 aside #youarehere{
-background-color: aqua;
-  }
+  background-color: aqua;
+ }
+
 #figure {
     text-align: center;
 }
