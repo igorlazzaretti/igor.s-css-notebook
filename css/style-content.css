@@ -22,26 +22,16 @@ footer[role="contentinfo"]  { grid-area: footer; }
   width: 100%;
 }
 
-.subgrid {
-  width: calc(100% + 2rem);
-  margin: 0 -1rem;
-}
-
-.grid-item,
-.subgrid-item {
-  padding: 1rem;
-}
-
 @media all and (max-width: 888px) {
   .grid {
     grid-template-areas:
-      'header header header '
-      'main main main '
-      'aside aside footer';
+      'header header header header '
+      'main main main main '
+      'aside footer footer footer';
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
   }
   aside{
-    margin-top: 40px;
+    
     border-top: solid 1px #cdcdcd;
   }
 }
@@ -49,75 +39,67 @@ footer[role="contentinfo"]  { grid-area: footer; }
 @media all and (min-width: 888px) { 
   .grid {
     grid-template-areas:
-      'header header header '
-      'main main main '
-      'aside footer footer';
+    'header header header header '
+    'main main main main '
+    'aside footer footer footer';
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
   }
-
 }
 
-
-
-
-
-
-/* aaaaaaaaaaaaaaaaaaa */
 body{
 
     background: linear-gradient(180deg, rgba(39, 140, 183, 0)  10%, rgba(51, 169, 219, 0.052) 70%, rgba(32, 171, 230, 0.101)  500%);
     height: 100vh;
-
 }
-
-
-/* HEADER */
-header{
-    background: linear-gradient(0deg, rgba(10, 33, 43, 0) 0%, rgba(51, 168, 219, 0.20) 99.99%, rgba(7, 67, 92, 0.2) 100%);
+h1{
+  font-size: 30px;
+  font-style: italic
 }
-
+h2{
+  font-weight: 400;
+  font-size: 25px;
+}
 
 ul { list-style: none; padding-left: 3px;}
 a { color:rgb(48, 117, 220); text-decoration: none;}
 
 header {
+  background: linear-gradient(0deg, rgba(10, 33, 43, 0) 0%, rgba(51, 168, 219, 0.20) 99.99%, rgba(7, 67, 92, 0.2) 100%);
     border-bottom: solid 1px #cdcdcd;
     padding: 0px;
     text-align: center;
-    height: 8vh;
+    height: 11vh;
 }
-@media all and (min-width: 100px) {
+@media all and (min-width: 10px) {
  header img{
-    margin-top: -10px;
     width: 30vh;
     max-width: 240px;
     min-width: 150px;
 }}
 @media all and (min-width: 550px) {
     header img{
-        margin-top: -10px;
        width: 30vh;
        max-width: 240px;
        min-width: 130px;
    }}
 @media all and (min-width: 880px) {
     header img{
-        margin-top: -10px;
-
-        width: 30vh;
+       width: 30vh;
        max-width: 240px;
        min-width: 130px;
    }} 
    
 /*        MAIN             */
-main{
+main {
     text-align: justify;
-    
+    padding: 20px;
+    display: inline;
+    position: relative;
+    }
+main section{
+  top:20px;
 }
-main div{
-    margin-right: 20vw;
-    width: 6    50px;
-}
+
 #figure-img-creator{
     margin-top: 20px;
     width: 100px;
@@ -127,22 +109,21 @@ footer {
     border-top: solid 1px #cdcdcd;
     text-align: center;
     display: inline;
+    margin-right: 20px;
+
 }
 
 footer img{
     width: 53px;
-        
+       
 }
 
 aside {
     display: inline;
     max-width: fit-content;
     border-right: solid 1px #cdcdcd;
+    padding: 20px;
   }
-
-aside #youarehere{
-  background-color: aqua;
- }
 
 #figure {
     text-align: center;
