@@ -33,22 +33,25 @@ footer[role="contentinfo"]  { grid-area: footer; }
 }
 
 @media all and (max-width: 888px) {
-    .grid {
-        grid-template-areas:
-          'header header header'
-          'main main main'
-          'aside aside footer';
-        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
-      }
-    
+  .grid {
+    grid-template-areas:
+      'header header header '
+      'main main main '
+      'aside aside footer';
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+  }
+  aside{
+    margin-top: 40px;
+    border-top: solid 1px #cdcdcd;
+  }
 }
 
 @media all and (min-width: 888px) { 
   .grid {
     grid-template-areas:
-      'header header header'
-      'aside main main'
-      'footer footer footer';
+      'header header header '
+      'main main main '
+      'aside footer footer';
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
   }
 
@@ -108,7 +111,7 @@ header {
    
 /*        MAIN             */
 main{
-    text-align: center;
+    text-align: justify;
     
 }
 main div{
@@ -125,6 +128,7 @@ footer {
     min-height: 40vh;
     border-top: solid 1px #cdcdcd;
     text-align: center;
+    display: inline;
 }
 footer img{
     width: 53px;
