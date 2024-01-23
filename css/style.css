@@ -37,7 +37,7 @@ footer[role="contentinfo"]  { grid-area: footer; }
         grid-template-areas:
           'header header header'
           'main main main'
-          'aside aside footer';
+          'aside footer footer';
         grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
       }
     
@@ -139,7 +139,6 @@ footer img{
 }
 
 aside {
-    display: inline;
     max-width: fit-content;
     border-right: solid 1px #cdcdcd;
   }
