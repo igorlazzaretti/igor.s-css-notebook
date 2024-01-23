@@ -32,7 +32,7 @@ footer[role="contentinfo"]  { grid-area: footer; }
   padding: 1rem;
 }
 
-@media all and (min-width: 576px) {
+@media all and (max-width: 888px) {
   .subgrid {
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     margin-bottom: 1rem;
@@ -40,9 +40,13 @@ footer[role="contentinfo"]  { grid-area: footer; }
   .subgrid-item {
     padding-bottom: 0.25rem;
   }
+  aside{
+    margin-top: 40px;
+    border-top: solid 1px #cdcdcd;
+  }
 }
 
-@media all and (min-width: 992px) { 
+@media all and (min-width: 888px) { 
   .grid {
     grid-template-areas:
       'header header header'
@@ -50,6 +54,7 @@ footer[role="contentinfo"]  { grid-area: footer; }
       'footer footer footer';
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
   }
+
 }
 
 
@@ -76,10 +81,24 @@ header {
     text-align: center;
     height: 8vh;
 }
-header img{
-    margin-top: -30px;
-    width: 25vh;
-}
+@media all and (min-width: 100px) {
+ header img{
+    width: 30vh;
+    max-width: 300px;
+    min-width: 210px;
+}}
+@media all and (min-width: 550px) {
+    header img{
+       width: 30vh;
+       max-width: 380px;
+       min-width: 200px;
+   }}
+@media all and (min-width: 880px) {
+    header img{
+       width: 30vh;
+       max-width: 390px;
+       min-width: 200px;
+   }}   
 
 .main{
     width: 300px;
@@ -93,7 +112,7 @@ footer {
 
 aside {
     display: inline;
-    max-width: 200px;
+    max-width: fit-content;
     border-right: solid 1px #cdcdcd;
   
 
