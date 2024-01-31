@@ -24,22 +24,54 @@
 
     <main role="main" class="grid-item"> 
 
-       <h2>Display: Inline;</h2>
-       <br>
-       <div id="exemplo"> display: inline-block 1</div>
-       <div id="exemplo"> display: inline-bloc 2</div>
-       <div id="exemplo"> display: inline-bloc 3</div>
-       <div id="exemplo"> display: inline-bloc 4</div>
-        <br><br><br>
-       <p>By Default:  tags: spam, b, em...</p>
-       <p>Now we can insert width, height, top and bottom</p>
+        <p>text-align: center;</p>
+   <div id="container">
+
+        <img src="../../../assets/3d-fluency-github-logo.png" alt="">
+        <span id="item2"> Span 3     </span>
+        <span id="item3"> Span 3     </span>
+   </div>
+   <p>text-align:right;</p>
+   <div id="container2">
+
+    <img src="../../../assets/3d-fluency-github-logo.png" alt="">
+    <span id="item2"> Span 2     </span>
+    <span id="item3"> Span 3     </span>
+</div>
+<p>#img{ vertical-align:middle}</p>
+<p>Alinha os elementos posteriores em relação a imagem </p>
+<div id="container3">
+
+    <img id="img" src="../../../assets/3d-fluency-github-logo.png" alt="">
+    <span id="item2v"> Span 2     </span>
+    <span id="item3v"> Span 3     </span>
+</div>
+
+   
+
 
        <style>
-        #exemplo{
-            display: inline-block;
-            background-color:blueviolet;
-            height: 200px;
-        }
+        #container {
+            text-align: center;
+            
+            border: solid 1px red;}
+        
+            #container2 {
+            text-align:right;
+            
+            border: solid 1px red;}
+
+            #container3 {
+            text-align:center;
+            height: 400px;
+                        
+            border: solid 1px red;}
+
+       div img{width: 200px;}
+       #item2{background-color: blueviolet;}
+       #item3{background-color:aquamarine}
+       #img{ vertical-align:middle}
+
        </style> 
 
 
