@@ -23,15 +23,64 @@
 <!--       ---------- MAINN  --------------------------------       -->
 
     <main role="main" class="grid-item"> 
+        <ul>
+            <li>position:static</li>
+            <li>position:relative</li>
+            <li>position:absolute</li>
+            <li>position: fixed</li>
+            <li>position: sticky</li>
+        </ul> <br>
 
-        <img src="../../../assets/content-images/flexvsgrid.PNG" alt="">
-<br>
-        <img src="../../../assets/content-images/display2.PNG" alt="">
-       <style>
-        img{
-            width: 80vw;
-        }
-       </style> 
+        
+        <h1>Position:Relative</h1> 
+       <p>We Can use: top, bottom, left and right
+
+       </p>
+        <br> <br>
+
+         <div class="exe1" id="div1"> Elemento 1 </div>
+         <div class="exe1" id="div2"> Elemento 2 </div>
+         <div class="exe1" id="div3"> Elemento 3 </div>
+         
+         <hr>
+
+         <div class="exe2" id="diva"> Elemento A </div>
+         <div class="exe2" id="divb"> Elemento B </div>
+         <div class="exe2" id="divc"> Elemento C </div>
+      
+      
+      <style>
+         .exe1{
+            display: inline-block;
+            width: 100px; height: 100px;
+            margin: 10px; padding: 10px;
+            border-radius: 4px;
+         }
+
+         #div1{ background-color: orange; }
+         #div2{ background-color:lightcyan; 
+                position: relative;         
+                top: 20px;
+                left: 16px;}
+         #div3{ background-color: green;  }
+         
+         
+         .exe2{
+            display: block;
+            width: 100px; height: 100px;
+            margin: 10px; padding: 10px;
+            border-radius: 4px;
+         }
+         #diva{ background-color: orange; }
+         #divb{ background-color: lightcyan; 
+            position: relative;         
+                top: 40px;
+                left: 16px;  }
+         #divc{ background-color: green;  }
+         
+
+
+      </style> 
 
 
     </main>
