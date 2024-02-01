@@ -29,10 +29,10 @@
             <li>position:absolute</li>
             <li>position: fixed</li>
             <li>position: sticky</li>
-        </ul> <br>
+        </ul> <br> <br>
 
         
-        <h1>Position:Relative</h1> 
+        <h1>Position:Absolute</h1> 
        <p>We Can use: top, bottom, left and right
 
        </p>
@@ -44,9 +44,9 @@
          
          <code>
             #div2{ background-color:lightcyan; 
-                position: relative;         
-                top: 20px;
-                left: 16px;}
+                position: absolute;         
+                left:55px;
+                top: 250px;}
          </code>
          <hr>
 
@@ -55,10 +55,38 @@
          <div class="exe2" id="divc"> Elemento C </div>
       
     <code> #divb{ background-color: lightcyan; 
-                position: relative;         
-                top: 40px;
-                left: 16px;  }</code>
+        position: absolute;         
+        left: 515px;   }</code>
+
+        <hr>
+
+        <div id="father"> Father
+            <div id="son">Son</div>
+
+            
+        </div><br>
+        <code> <code>     #father{width: 40%; box-sizing: border-box;
+            height: 330px; padding: 10px; position: relative;
+            border: 2px solid goldenrod;}
+<br>
+    #son{width: 60px;height: 60px;
+        position: absolute;
+        top:0; right: 0;
+        background-color: aqua;}</code></code>
       <style>
+        #father{width: 40%; box-sizing: border-box;
+                height: 330px; padding: 10px; position: relative;
+                border: 2px solid goldenrod;}
+
+        #son{width: 60px;height: 60px;
+            position: absolute;
+            top:0; right: 0;
+            background-color: aqua;}
+
+
+
+
+
          .exe1{
             display: inline-block;
             width: 100px; height: 100px;
@@ -68,9 +96,9 @@
 
          #div1{ background-color: orange; }
          #div2{ background-color:lightcyan; 
-                position: relative;         
-                top: 20px;
-                left: 16px;}
+                position: absolute;         
+                left:55px;
+            top: 250px;}
          #div3{ background-color: green;  }
          
          
@@ -82,11 +110,12 @@
          }
          #diva{ background-color: orange; }
          #divb{ background-color: lightcyan; 
-            position: relative;         
-                top: 40px;
-                left: 16px;  }
+                position: absolute;         
+                left: 515px;  }
          #divc{ background-color: green;  }
          
+
+         /*  */
 
 
       </style> 

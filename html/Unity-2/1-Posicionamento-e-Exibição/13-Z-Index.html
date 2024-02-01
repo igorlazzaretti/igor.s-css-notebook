@@ -29,11 +29,11 @@
             <li>position:absolute</li>
             <li>position: fixed</li>
             <li>position: sticky</li>
-        </ul> <br>
+        </ul> <br> <br>
 
         
-        <h1>Position:Relative</h1> 
-       <p>We Can use: top, bottom, left and right
+        <h1>Position: Sticky/h1> 
+       <p> Behave like Realtive, but when scroll behave like fixed
 
        </p>
         <br> <br>
@@ -43,10 +43,7 @@
          <div class="exe1" id="div3"> Elemento 3 </div>
          
          <code>
-            #div2{ background-color:lightcyan; 
-                position: relative;         
-                top: 20px;
-                left: 16px;}
+    
          </code>
          <hr>
 
@@ -54,11 +51,12 @@
          <div class="exe2" id="divb"> Elemento B </div>
          <div class="exe2" id="divc"> Elemento C </div>
       
-    <code> #divb{ background-color: lightcyan; 
-                position: relative;         
-                top: 40px;
-                left: 16px;  }</code>
+    <code>
+
+    </code>
+
       <style>
+     
          .exe1{
             display: inline-block;
             width: 100px; height: 100px;
@@ -68,9 +66,8 @@
 
          #div1{ background-color: orange; }
          #div2{ background-color:lightcyan; 
-                position: relative;         
-                top: 20px;
-                left: 16px;}
+                  position: sticky;
+                top:20px ; }
          #div3{ background-color: green;  }
          
          
@@ -82,12 +79,16 @@
          }
          #diva{ background-color: orange; }
          #divb{ background-color: lightcyan; 
-            position: relative;         
-                top: 40px;
-                left: 16px;  }
+                position: sticky;
+                top:20px ; }
          #divc{ background-color: green;  }
          
 
+         /*  */
+            header img{
+                position: sticky;
+                top: 0px;
+            }
 
       </style> 
 
